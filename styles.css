@@ -216,3 +216,30 @@ footer {
 .achievement-link .glass-card:hover {
     cursor: pointer;
 }
+/* Add this to your styles.css */
+
+/* Custom styling for the CV Download Button */
+.btn-primary.btn-lg {
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 50px; /* Pill shape */
+    transition: all 0.3s ease;
+    
+    /* Inherit Theme Colors */
+    background-color: var(--accent-color); 
+    border-color: var(--accent-color); 
+    color: var(--bg-dark); /* Dark text on the accent button */
+    box-shadow: 0 5px 15px var(--accent-glow);
+}
+
+.btn-primary.btn-lg:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--accent-glow);
+    filter: brightness(1.1);
+}
+
+/* Specific styling for the Hero section button to stand out against the dark background */
+.hero-cv-btn {
+    /* Optional: Add a slight outline for visibility against the hero background if needed */
+    border: 2px solid var(--accent-color);
+}
